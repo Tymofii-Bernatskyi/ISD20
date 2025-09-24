@@ -19,63 +19,61 @@
   <link rel="icon" href="favicon/site.webmanifest">
   <link rel="manifest" href="./favicon/site.webmanifest">
 </head>
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+<body style="background-color:rgb(216, 246, 253);">
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Tools</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Tools</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Page 2</a>
+        <a class="mdl-navigation__link" href="">Page 3</a>
+        <a class="mdl-navigation__link" href="">don't click here</a>
       </nav>
     </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <h1 id="my-header">Welcome to Healthy Living Guide</h1>
+      <!-- MDL Card with List-->
+      <div class="demo-card mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">What is here?</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <ul>
+            <li>Nutrition Page - Headlines and a list of 5+ healthy snacks/meals with images.</li>
+            <li>Interactive page - a text field that opens food search results.</li>
+            <li>On this site there is easy navigation</li>
+            <a href="./cities.html"> My cities page</a>
+            <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+            <!-- Colored raised button -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+              search
+            </button>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                <label class="mdl-textfield__label" for="sample2">Number...</label>
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form></div>
+    </main>
   </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
-  </main>
-</div>
-<body style="background-color:rgb(216, 246, 253);">
-  <h1 id="my-header">Welcome to Healthy Living Guide</h1>
-<!-- MDL Card with List-->
-<div class="demo-card mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">What is here?</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    <ul>
-
-      <li>Nutrition Page - Headlines and a list of 5+ healthy snacks/meals with images.</li>
-      <li>Interactive page - a text field that opens food search results.</li>
-      <li>On this site there is easy navigation</li>
-    <a href="./cities.html"> My cities page</a>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- Colored raised button -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-      search
-    </button>
-    <!-- Numeric Textfield -->
-
-  <form action="#">
-    <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-      <label class="mdl-textfield__label" for="sample2">Number...</label>
-      <span class="mdl-textfield__error">Input is not a number!</span>
-    </div>
-  </form>
 </body>
 </html>

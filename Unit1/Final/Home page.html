@@ -30,18 +30,19 @@
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
         <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Home page.html?serverWindowId=3269e7c3-4169-47b4-8503-0af5c3bd8453">Home</a>
+          <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Home page.html?serverWindowId=3269e7c3-4169-47b4-8503-0af5c3bd8453">Home</a>
+          <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Home page.html?serverWindowId=3269e7c3-4169-47b4-8503-0af5c3bd8453">Home</a>
+          <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Home page.html?serverWindowId=3269e7c3-4169-47b4-8503-0af5c3bd8453">Home</a>
+          
         </nav>
       </div>
     </header>
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Tools</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Home</a>
-        <a class="mdl-navigation__link" href="">Page 2</a>
+        <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Home page.html?serverWindowId=3269e7c3-4169-47b4-8503-0af5c3bd8453">Home</a>
+        <a class="mdl-navigation__link" href="https://urban-fortnight-q7g5vr9xj5rg299g7-3004.app.github.dev/Unit1/Final/Interactive page.html?serverWindowId=3ad7eea1-350e-42e9-87d5-809a4fc9e511">Page 2</a>
         <a class="mdl-navigation__link" href="">Page 3</a>
         <a class="mdl-navigation__link" href="">don't click here</a>
       </nav>
@@ -59,7 +60,6 @@
             <li>Nutrition Page - Headlines and a list of 5+ healthy snacks/meals with images.</li>
             <li>Interactive page - a text field that opens food search results.</li>
             <li>On this site there is easy navigation</li>
-            <a href="./cities.html"> My cities page</a>
             <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
             <!-- Colored raised button -->
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
@@ -69,11 +69,26 @@
             <form action="#">
               <div class="mdl-textfield mdl-js-textfield">
                 <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-                <label class="mdl-textfield__label" for="sample2">Number...</label>
+                <label class="mdl-textfield__label" for="sample2">text</label>
                 <span class="mdl-textfield__error">Input is not a number!</span>
               </div>
-            </form></div>
+            </form>
     </main>
   </div>
+  <script>
+    const button = document.getElementById('searchbutton');
+    const input = document.getElementById('userInput');
+
+    button.addEventListener('click', function () {
+      const q = (input.value || '').trim();
+      const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+      window.open(url, '_blank');
+    });
+
+    document.getElementById('clearButton').addEventListener('click', () => {
+      document.getElementById('userInput').value = '';
+      document.getElementById('userInput').focus();
+    });
+  </script>
 </body>
 </html>

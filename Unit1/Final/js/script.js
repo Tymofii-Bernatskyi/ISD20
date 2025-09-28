@@ -1,16 +1,16 @@
-<script>
-  const button = document.getElementById('searchbutton');
-  const input = document.getElementById('userInput');
+const button = document.getElementById('searchbutton');
+const input = document.getElementById('userInput');
+const clearBtn = document.getElementById('clearButton');
 
-
-  button.addEventListener('click', function () {
-    const q = (input.value || '').trim();
+button.addEventListener('click', function () {
+  const q = (input.value || '').trim();
+  if (q) {
     const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
     window.open(url, '_blank');
-  });
+  }
+});
 
-  document.getElementById('clearButton').addEventListener('click', () => {
-    document.getElementById('userInput').value = '';
-    document.getElementById('userInput').focus();
-  });
-</script>
+clearBtn.addEventListener('click', () => {
+  input.value = '';
+  input.focus();
+});
